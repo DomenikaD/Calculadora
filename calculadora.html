@@ -17,5 +17,45 @@
             </ul>
         </nav>
     </section>
+
+    <div class="calculator-container">
+        <h1>Calculadora</h1>
+        <div>
+            <input type="text" [value]="displayValue" readonly class="custom-input">
+            <div class="button-container">
+                <div class="button-row">
+                    <button class="calculator-button orange" (click)="appendToDisplay('1')">1</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('2')">2</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('3')">3</button>
+                    <button class="calculator-button green" (click)="addToDisplay('+')">+</button>
+                </div>
+                <div class="button-row">     
+                    <button class="calculator-button orange" (click)="appendToDisplay('4')">4</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('5')">5</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('6')">6</button>
+                    <button class="calculator-button green" (click)="addToDisplay('-')">-</button>
+                </div>
+                <div class="button-row"> 
+                    <button class="calculator-button orange" (click)="appendToDisplay('7')">7</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('8')">8</button>
+                    <button class="calculator-button orange" (click)="appendToDisplay('9')">9</button>
+                    <button class="calculator-button green" (click)="addToDisplay('*')">*</button>
+                </div>
+                <div class="button-row">    
+                    <button class="calculator-button orange" (click)="appendToDisplay('0')">0</button>
+                    <button class="calculator-button blue" (click)="Resultado()">=</button>
+                    <button class="calculator-button red" (click)="clearDisplay()">C</button>
+                    <button class="calculator-button green" (click)="addToDisplay('/')">/</button>
+                </div>
+                <div class="button-row center">
+                    <button class="calculator-button pink" (click)="eliminar()">Borrar</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
 </html>
