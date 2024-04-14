@@ -32,11 +32,12 @@ nav ul li {
 }
 
 .button:hover {
-    background-color: #b1ecfc;
+    background-color: #6adfff;
 }
 
 
 .cuerpo{
+
      h2{
         font-family: Jost, sans-serif;
         text-decoration-line: underline;
@@ -47,9 +48,6 @@ nav ul li {
 
      p{
         font-family: Jost, sans-serif;
-       
-
-
 
      }
 }
