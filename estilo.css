@@ -1,13 +1,14 @@
 .encabezado {
     background-color: #8fcfef;
     color: #fff;
-    padding: 20px;
+    padding: 1px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 nav {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 
 nav ul {
@@ -26,8 +27,7 @@ nav ul li {
 
 .barra_navegacion a {
     display: block;
-    padding: 8px 8px; 
-    
+    padding: 8px 8px;   
     border-radius: 3px;
     color: #000000;
     text-decoration: none;
@@ -68,6 +68,41 @@ nav ul li {
 .button:hover {
     background-color: #6adfff;
 }
+
+/* Estilos para el contenedor de la imagen y el texto */
+.contenedor-imagen {
+    position: relative; /* Hace que el contenedor sea relativo para que el texto absoluto se posicione correctamente */
+    display: flex; /* Utilizamos flexbox para centrar la imagen */
+    justify-content: center; /* Centramos horizontalmente la imagen */
+    align-items: center; /* Centramos verticalmente la imagen */
+    height: 400px; /* Altura del contenedor */
+}
+
+.contenedor-imagen img {
+    max-width: 100%; /* La imagen no superará el ancho del contenedor */
+    max-height: 100%; /* La imagen no superará la altura del contenedor */
+}
+
+/* Estilos para el texto en la parte superior */
+.texto-superior {
+    position: absolute; /* Hace que el texto sea posicionado de manera absoluta con respecto al contenedor padre */
+    top: 0; /* Lo coloca en la parte superior del contenedor */
+    left: 50%; /* Lo coloca en la mitad izquierda del contenedor */
+    transform: translateX(-50%); /* Centra el texto horizontalmente */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    padding: 20px; /* Añade espacio alrededor del texto */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Alineación del texto al centro */
+    width: 100%; /* Ancho completo */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilos para el texto dentro del contenedor de la imagen */
+.texto-superior p {
+    margin: 0; /* Elimina el margen del párrafo */
+    font-size: 18px; /* Tamaño del texto */
+}
+
 
 /* Estilos para el contenedor de la imagen */
 div[style="text-align: left"] {
