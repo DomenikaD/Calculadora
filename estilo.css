@@ -92,4 +92,20 @@ footer {
     text-align: center; /* Alineación del texto al centro */
 }
 
+/* Estilos para la lista dentro del pie de página */
+.pie-de-pagina {
+    display: flex; /* Utilizamos flexbox para distribuir los elementos */
+    justify-content: space-between; /* Distribuye los elementos alrededor */
+    max-width: 800px; /* Ancho máximo del pie de página */
+    margin: 0 auto; /* Centra el pie de página horizontalmente */
+}
+
+/* Estilos para los párrafos dentro del pie de página */
+.pie-de-pagina p {
+    margin-bottom: 10px; /* Espaciado inferior entre párrafos */
+}
+
+
+
+
 
