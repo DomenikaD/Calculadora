@@ -1,0 +1,56 @@
+.Contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto distribuye el espacio entre el texto y la imagen */
+    margin-bottom: 20px; /* Espacio entre cada sección */
+}
+
+.texto {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre el texto y la imagen */
+}
+
+@keyframes moverDerecha {
+    0% {
+        transform: translateX(0); /* Sin movimiento al inicio */
+    }
+    50% {
+        transform: translateX(100px); /* Mover hacia la derecha */
+    }
+}
+
+/* Estilos para el contenedor de ejemplos */
+.imagen {
+    justify-content: center; /* Centramos horizontalmente las imágenes */
+    align-items: center; /* Centramos verticalmente las imágenes */
+    flex-direction: column; /* Alineamos las imágenes en una columna */
+    margin-top: 20px; /* Espacio superior */
+    display: none; /* Ocultar las imágenes por defecto */
+    
+}
+
+.imagen img {
+    max-width: 90px; /* Tamaño máximo de la imagen */
+    animation: moverDerecha 4s ease-in-out forwards;
+}
+
+.imagen:hover img {
+    display: block; /* Mostrar las imágenes cuando se hace hover en el contenedor */
+}
+
+/* Estilos para el contenedor de ejemplos */
+.ejemplos {
+    
+    justify-content: center; /* Centramos horizontalmente las imágenes */
+    align-items: center; /* Centramos verticalmente las imágenes */
+    flex-direction: column; /* Alineamos las imágenes en una columna */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos para las imágenes */
+.ejemplos img {
+    width: 200px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin-bottom: 10px; /* Espacio inferior entre imágenes */
+    animation: moverDerecha 4s ease-in-out forwards;
+}

@@ -17,10 +17,12 @@
     50% {
         transform: translateX(100px); /* Mover hacia la derecha */
     }
+    100% {
+        transform: translateX(0); /* Volver a la posición inicial */
+    }
 }
 
 .imagen img {
     max-width: 500px; /* Tamaño máximo de la imagen */
-    animation: moverDerecha 4s ease-in-out forwards;
-    
+    animation: moverDerecha 4s ease forwards; 
 }
