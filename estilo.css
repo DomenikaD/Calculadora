@@ -1,13 +1,14 @@
 .encabezado {
     background-color:  #E3E2DF;
     color: #fff;
-    padding: 20px;
+    padding: 1px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 nav {
     text-align: center;
-    margin-top: 20px;
+    margin-top: -10px;
 }
 
 nav ul {
@@ -26,8 +27,7 @@ nav ul li {
 
 .barra_navegacion a {
     display: block;
-    padding: 8px 8px; 
-    
+    padding: 8px 8px;   
     border-radius: 3px;
     color: #000000;
     text-decoration: none;
@@ -68,7 +68,6 @@ nav ul li {
 .button:hover {
     background-color: #E3AFBC;
 }
-
 
 div[style="text-align: left"] {
     text-align: left; 
