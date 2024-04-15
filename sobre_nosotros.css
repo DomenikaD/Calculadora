@@ -1,28 +1,32 @@
 .Contenido {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Esto distribuye el espacio entre el texto y la imagen */
-    margin-bottom: 20px; /* Espacio entre cada sección */
+    justify-content: space-between; 
+    margin-bottom: 20px; 
 }
 
 .texto {
     flex: 1;
-    margin-right: 20px; /* Espacio entre el texto y la imagen */
+    margin-right: 20px; 
+
+    h1{
+        color: #9A1750
+    }
 }
 
 @keyframes moverDerecha {
     0% {
-        transform: translateX(0); /* Sin movimiento al inicio */
+        transform: translateX(0);
     }
     50% {
-        transform: translateX(100px); /* Mover hacia la derecha */
+        transform: translateX(100px); 
     }
     100% {
-        transform: translateX(0); /* Volver a la posición inicial */
+        transform: translateX(0); 
     }
 }
 
 .imagen img {
-    max-width: 500px; /* Tamaño máximo de la imagen */
+    max-width: 500px; 
     animation: moverDerecha 4s ease forwards; 
 }
