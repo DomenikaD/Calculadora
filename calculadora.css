@@ -1,13 +1,14 @@
 .calculator-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
+    background-color: #78415181;
+    width: 400px;
+    margin: 0 auto;
+    height: 100vh;
+    border-radius: 10px;
+    left: 20px;
+
   }
 
-
-  
   h1 {
     font-size: 24px;
     text-align: center;
@@ -21,6 +22,11 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
+  }
+
+  .calculator-button:active {
+    background-color: #ccc;
+  
   }
   
   .orange {
@@ -61,12 +67,13 @@
   }
   
   .button-container {
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin-top: 20px;
+    grid-template-columns: repeat(4, 1fr);
   }
   
   .custom-input {
